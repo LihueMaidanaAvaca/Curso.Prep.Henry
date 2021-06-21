@@ -10,7 +10,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[array.length - 1]
+  return array[array.length -1]
 }
 
 
@@ -26,12 +26,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = [];
-  for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i] + 1;
-  }
-
-  return nuevoArray;
+   arraytransformado = [];
+   for (i=0 ; i < array.length ; i++) {
+     arraytransformado [i] = array[i] + 1;
+   } return arraytransformado
 }
 
 
@@ -68,7 +66,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var i = 0; i < array.length; i++) {
+  for(i = 0; i < array.length; i++) {
     if(array[i] === elemento) {
       return true;
     }
@@ -102,13 +100,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var maximo = numeros[0];
-  for(var i = 1; i < numeros.length; i++) {
-    if(numeros[i] > maximo) { 
-      maximo = numeros[i];
+  elmasgrande = numeros[0];
+  for(i=1 ; i < numeros.length; i++){
+    if (numeros[i] > elmasgrande) {
+      elmasgrande = numeros[i]
     }
   }
-  return maximo
+  return elmasgrande
 }
 
 
@@ -116,7 +114,7 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  if (arguments.length < 1) return 0;
+  if (arguments.length === 0) return 0;
   var total = 1;
   for(var i = 0; i < arguments.length; i++) {
     total = total * arguments[i];
@@ -169,13 +167,15 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí 
-  for (var i =0 ; i < arreglo.length - 1; i++) {
-    if(arreglo[i] !== arreglo[i+1]){
+  primernumero = arreglo[0]
+  for(i=1; i < arreglo.length; i++) {
+    if(arreglo[i] !== primernumero ) {
       return false
     }
+    if(arreglo[i] === primernumero ) {
+      return true}
   }
-  return true 
-  
+
 } 
 
 
@@ -203,16 +203,11 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var array = [];
-  var suma = numero;
-  for(var i= 0; i<10; i++) {
-    if(i === 5) continue;
-    else {
-      suma = suma + 2;
-      array.push(suma);
-    }
-  }
-  return array;
+  newarray = []
+  for (i= 0; i< array.length; i++) {
+    if(array[i] > 101 && array[i] <= 200 ) {newarray.push(array[i])}
+     
+  }return newarray;
 }
 
 
