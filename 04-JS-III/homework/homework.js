@@ -219,6 +219,18 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  newarray=[];
+  n= numero
+  i= 0
+  do{
+    i++
+    n = n + 2;
+    newarray.push(n)
+    if (i === n) break
+  } while (i<10) {
+    if (i === n) return "Se interrumpió la ejecución"
+    }
+  return newarray;
 }
 
 
@@ -229,6 +241,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  newarray=[];
+  n= numero
+  i= 0
+  do{
+    i++
+    if (i===5) continue
+    n = n + 2
+    newarray.push(n) 
+      
+  } while (i<10) ;   
+  return newarray;
 }
 
 
