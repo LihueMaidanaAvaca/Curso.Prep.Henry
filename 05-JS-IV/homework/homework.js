@@ -60,12 +60,12 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-  objeto = {
+  nuevoObjeto = {
     nombre: nombre,
     email: email,
     password: password,
   } 
-  return objeto
+  return nuevoObjeto
 
 }
 
@@ -150,7 +150,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
     producto.calcularPrecioDescuento = function () { 
-     return this.precio - this.precio * this.porcentajeDeDescuento; 
+    return this.precio - this.precio * this.porcentajeDeDescuento; 
     }
     return producto
 }
